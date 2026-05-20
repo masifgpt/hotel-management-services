@@ -6,7 +6,7 @@ A premium, full-stack responsive web application designed for luxury hospitality
 
 ## 🌟 Live Experience & Source
 
-*   **⚡ Live Preview Link:** [👉 Click Here to View Live Project](https://your-live-preview-link-here.com) *(Yahan apna live link paste karein)*
+*   **⚡ Live Preview Link:** [👉 Click Here to View Live Project](https://hotel-managment-projectt.netlify.app/) *(Yahan apna live link paste karein)*
 *   **💻 GitHub Repository:** [👉 Official GitHub Source](https://github.com/masifgpt)
 
 ---
