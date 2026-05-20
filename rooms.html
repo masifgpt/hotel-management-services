@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Explore our premium portfolio of curated rooms, penthouses, and private executive suites at Aura Stay.">
+    <title>Rooms & Suites Portfolios | Aura Stay</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <div class="preloader" id="preloader"><div class="spinner"></div></div>
+
+    <!-- Top Bar -->
+    <div class="top-bar">
+        <div class="container top-bar-container">
+            <div class="top-info">
+                <span><i class="fas fa-phone"></i> +1 (555) 839-2001</span>
+                <span><i class="fas fa-envelope"></i> reservations@aurastay.com</span>
+            </div>
+            <div class="top-actions">
+                <button id="theme-toggle" class="theme-toggle-btn" aria-label="Toggle Dark Mode"><i class="fas fa-moon"></i></button>
+                <a href="booking.html" class="top-cta">Book Direct Perks</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Header Navbar -->
+    <header class="main-header" id="header">
+        <div class="container nav-container">
+            <a href="index.html" class="logo">AURA<span>STAY</span></a>
+            <nav class="navbar" id="navbar">
+                <ul class="nav-menu">
+                    <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+                    <li class="nav-item"><a href="rooms.html" class="nav-link active">Rooms</a></li>
+                    <li class="nav-item"><a href="services.html" class="nav-link">Services</a></li>
+                    <li class="nav-item"><a href="about.html" class="nav-link">About</a></li>
+                    <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="header-actions">
+                <a href="booking.html" class="btn btn-gold btn-nav">Book A Room</a>
+                <button class="hamburger" id="hamburger" aria-label="Toggle Menu">
+                    <span class="bar"></span><span class="bar"></span><span class="bar"></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Inner Hero Page Title -->
+    <section class="inner-hero" style="background-image: linear-gradient(rgba(10, 25, 47, 0.75), rgba(10, 25, 47, 0.85)), url('https://images.unsplash.com/photo-1578683010236-d716f9a3f461?auto=format&fit=crop&w=1920&q=80');">
+        <div class="container text-center">
+            <h1>Rooms & Suites Portfolio</h1>
+            <p>Impeccable structural layouts fine-tuned for high-performance recovery and quiet comfort.</p>
+        </div>
+    </section>
+
+    <!-- Filter Portfolio Section -->
+    <section class="section rooms-portfolio">
+        <div class="container">
+            <!-- Dynamic Filter Controls -->
+            <div class="filter-controls-group text-center">
+                <button class="filter-btn active" data-filter="all">All Sanctuaries</button>
+                <button class="filter-btn" data-filter="rooms">Standard Rooms</button>
+                <button class="filter-btn" data-filter="suites">Executive Suites</button>
+                <button class="filter-btn" data-filter="penthouses">Luxury Penthouses</button>
+            </div>
+
+            <div class="grid grid-3 mt-5" id="rooms-grid">
+                <!-- Room 1 -->
+                <div class="card room-card portfolio-item scroll-reveal" data-category="rooms">
+                    <div class="card-img-wrapper">
+                        <img src="https://images.unsplash.com/photo-1618773928121-c32242e63f39?auto=format&fit=crop&w=800&q=80" alt="Deluxe Room">
+                        <span class="room-price">$299<span>/Night</span></span>
+                    </div>
+                    <div class="card-body">
+                        <div class="room-meta"><span><i class="fas fa-expand"></i> 45 m²</span><span><i class="fas fa-user-friends"></i> 2 Guests</span></div>
+                        <h3>Deluxe Ocean Suite</h3>
+                        <p>Complete sweeping floor plans optimized with curated automated temperature mechanics.</p>
+                        <div class="card-footer-layout">
+                            <div class="rating"><i class="fas fa-star"></i> 4.9</div>
+                            <a href="booking.html" class="btn btn-gold btn-sm">Reserve Now</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Room 2 -->
+                <div class="card room-card portfolio-item scroll-reveal" data-category="suites">
+                    <div class="card-img-wrapper">
+                        <img src="https://images.unsplash.com/photo-1590490360182-c33d57733427?auto=format&fit=crop&w=800&q=80" alt="Executive Suite">
+                        <span class="room-price">$450<span>/Night</span></span>
+                    </div>
+                    <div class="card-body">
+                        <div class="room-meta"><span><i class="fas fa-expand"></i> 68 m²</span><span><i class="fas fa-user-friends"></i> 3 Guests</span></div>
+                        <h3>Executive Garden Suite</h3>
+                        <p>Plush separate lounge arrays paired with hyper-secure integrated workstations.</p>
+                        <div class="card-footer-layout">
+                            <div class="rating"><i class="fas fa-star"></i> 4.8</div>
+                            <a href="booking.html" class="btn btn-gold btn-sm">Reserve Now</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Room 3 -->
+                <div class="card room-card portfolio-item scroll-reveal" data-category="penthouses">
+                    <div class="card-img-wrapper">
+                        <img src="https://images.unsplash.com/photo-1566665797739-1674de7a421a?auto=format&fit=crop&w=800&q=80" alt="Presidential Penthouse">
+                        <span class="room-price">$1,200<span>/Night</span></span>
+                    </div>
+                    <div class="card-body">
+                        <div class="room-meta"><span><i class="fas fa-expand"></i> 140 m²</span><span><i class="fas fa-user-friends"></i> 4 Guests</span></div>
+                        <h3>Presidential Skyline Penthouse</h3>
+                        <p>Complete top-tier private residential floor layout featuring private pool decks.</p>
+                        <div class="card-footer-layout">
+                            <div class="rating"><i class="fas fa-star"></i> 5.0</div>
+                            <a href="booking.html" class="btn btn-gold btn-sm">Reserve Now</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Room 4 -->
+                <div class="card room-card portfolio-item scroll-reveal" data-category="rooms">
+                    <div class="card-img-wrapper">
+                        <img src="https://images.unsplash.com/photo-1591088398332-8a7791972843?auto=format&fit=crop&w=800&q=80" alt="Superior Queen Room">
+                        <span class="room-price">$250<span>/Night</span></span>
+                    </div>
+                    <div class="card-body">
+                        <div class="room-meta"><span><i class="fas fa-expand"></i> 40 m²</span><span><i class="fas fa-user-friends"></i> 2 Guests</span></div>
+                        <h3>Superior Queen Unit</h3>
+                        <p>Minimalist luxury structures maximizing natural daylight cycles and deep rest metrics.</p>
+                        <div class="card-footer-layout">
+                            <div class="rating"><i class="fas fa-star"></i> 4.7</div>
+                            <a href="booking.html" class="btn btn-gold btn-sm">Reserve Now</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Room 5 -->
+                <div class="card room-card portfolio-item scroll-reveal" data-category="suites">
+                    <div class="card-img-wrapper">
+                        <img src="https://images.unsplash.com/photo-1596394516093-501ba68a0ba6?auto=format&fit=crop&w=800&q=80" alt="Signature Panorama Suite">
+                        <span class="room-price">$580<span>/Night</span></span>
+                    </div>
+                    <div class="card-body">
+                        <div class="room-meta"><span><i class="fas fa-expand"></i> 85 m²</span><span><i class="fas fa-user-friends"></i> 3 Guests</span></div>
+                        <h3>Signature Panorama Suite</h3>
+                        <p>Wraparound structural glazing offering uninterrupted view horizons over high urban profiles.</p>
+                        <div class="card-footer-layout">
+                            <div class="rating"><i class="fas fa-star"></i> 4.9</div>
+                            <a href="booking.html" class="btn btn-gold btn-sm">Reserve Now</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Room 6 -->
+                <div class="card room-card portfolio-item scroll-reveal" data-category="penthouses">
+                    <div class="card-img-wrapper">
+                        <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=800&q=80" alt="Royal Imperial Villa">
+                        <span class="room-price">$2,500<span>/Night</span></span>
+                    </div>
+                    <div class="card-body">
+                        <div class="room-meta"><span><i class="fas fa-expand"></i> 310 m²</span><span><i class="fas fa-user-friends"></i> 6 Guests</span></div>
+                        <h3>Royal Imperial Villa</h3>
+                        <p>Detached coastal compound utilizing high architectural preservation features.</p>
+                        <div class="card-footer-layout">
+                            <div class="rating"><i class="fas fa-star"></i> 5.0</div>
+                            <a href="booking.html" class="btn btn-gold btn-sm">Reserve Now</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="main-footer bg-navy text-white">
+        <div class="container grid grid-4">
+            <div class="footer-col">
+                <a href="index.html" class="logo logo-white">AURA<span>STAY</span></a>
+                <p class="mt-3">Redefining hotel operations frameworking across world-class hubs.</p>
+            </div>
+            <div class="footer-col">
+                <h4>Useful Resource Nav</h4>
+                <ul class="footer-links">
+                    <li><a href="rooms.html">Suites Portfolio</a></li>
+                    <li><a href="booking.html">Booking Matrix</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Operations Center</h4>
+                <p>742 Elite Boulevard, Suite 100, New York, NY</p>
+            </div>
+            <div class="footer-col">
+                <h4>Legal Bounds</h4>
+                <p>Protected by multi-tier encryption setups.</p>
+            </div>
+        </div>
+        <div class="footer-bottom text-center">
+            <p>&copy; 2026 Aura Stay Management Group Inc. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <button id="back-to-top" class="back-to-top"><i class="fas fa-arrow-up"></i></button>
+    <script src="js/script.js"></script>
+</body>
+</html>

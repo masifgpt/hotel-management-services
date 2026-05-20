@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Aura Stay - Luxury Hotel & Management Services. Experience world-class hospitality, premium suites, and unforgettable fine dining.">
+    <title>Aura Stay | Luxury Hotel & Suites</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <!-- FontAwesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <!-- Preloader -->
+    <div class="preloader" id="preloader">
+        <div class="spinner"></div>
+    </div>
+
+    <!-- Top Bar -->
+    <div class="top-bar">
+        <div class="container top-bar-container">
+            <div class="top-info">
+                <span><i class="fas fa-phone"></i> +1 (555) 839-2001</span>
+                <span><i class="fas fa-envelope"></i> reservations@aurastay.com</span>
+            </div>
+            <div class="top-actions">
+                <button id="theme-toggle" class="theme-toggle-btn" aria-label="Toggle Dark Mode">
+                    <i class="fas fa-moon"></i>
+                </button>
+                <a href="booking.html" class="top-cta">Book Direct Perks</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Header / Navbar -->
+    <header class="main-header" id="header">
+        <div class="container nav-container">
+            <a href="index.html" class="logo">
+                AURA<span>STAY</span>
+            </a>
+            
+            <nav class="navbar" id="navbar">
+                <ul class="nav-menu">
+                    <li class="nav-item"><a href="index.html" class="nav-link active">Home</a></li>
+                    <li class="nav-item"><a href="rooms.html" class="nav-link">Rooms</a></li>
+                    <li class="nav-item"><a href="services.html" class="nav-link">Services</a></li>
+                    <li class="nav-item"><a href="about.html" class="nav-link">About</a></li>
+                    <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
+                </ul>
+            </nav>
+
+            <div class="header-actions">
+                <a href="booking.html" class="btn btn-gold btn-nav">Book A Room</a>
+                <button class="hamburger" id="hamburger" aria-label="Toggle Menu">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero-section">
+        <div class="hero-bg">
+            <!-- Semi-transparent overlay over placeholder background graphic layout -->
+            <div class="hero-overlay"></div>
+            <div class="hero-img-placeholder" style="background-image: url('https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?auto=format&fit=crop&w=1920&q=80');"></div>
+        </div>
+        
+        <div class="container hero-content text-center">
+            <h5 class="reveal-anim">WELCOME TO OLYMPUS OF LUXURY</h5>
+            <h1 class="reveal-anim">Refined Hospitality <br>Unforgettable Experiences</h1>
+            <p class="reveal-anim">Immerse yourself in tailored elegance. Nestled safely within coastal views and architectural mastery.</p>
+            <div class="hero-btns reveal-anim">
+                <a href="rooms.html" class="btn btn-gold">Explore Suites</a>
+                <a href="services.html" class="btn btn-outline">Our Services</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Quick Booking Widget -->
+    <section class="quick-booking-container">
+        <div class="container">
+            <form class="quick-booking-form" action="booking.html" method="GET">
+                <div class="form-group-inline">
+                    <label><i class="fas fa-calendar-alt"></i> Check-In</label>
+                    <input type="date" required name="checkin">
+                </div>
+                <div class="form-group-inline">
+                    <label><i class="fas fa-calendar-check"></i> Check-Out</label>
+                    <input type="date" required name="checkout">
+                </div>
+                <div class="form-group-inline">
+                    <label><i class="fas fa-users"></i> Guests</label>
+                    <select name="guests">
+                        <option value="1">1 Guest</option>
+                        <option value="2" selected>2 Guests</option>
+                        <option value="3">3 Guests</option>
+                        <option value="4">4+ Guests</option>
+                    </select>
+                </div>
+                <div class="form-group-inline">
+                    <label><i class="fas fa-bed"></i> Type</label>
+                    <select name="room_type">
+                        <option value="deluxe">Deluxe Room</option>
+                        <option value="executive">Executive Suite</option>
+                        <option value="presidential">Presidential Penthouse</option>
+                    </select>
+                </div>
+                <button type="submit" class="btn btn-gold btn-block">Check Availability</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Featured Rooms -->
+    <section class="section section-rooms bg-light">
+        <div class="container">
+            <div class="section-header text-center">
+                <span class="sub-title">Our Sacred Spaces</span>
+                <h2>Featured Rooms & Suites</h2>
+                <div class="divider"></div>
+            </div>
+
+            <div class="grid grid-3">
+                <!-- Room Card 1 -->
+                <div class="card room-card scroll-reveal">
+                    <div class="card-img-wrapper">
+                        <img src="https://images.unsplash.com/photo-1618773928121-c32242e63f39?auto=format&fit=crop&w=800&q=80" alt="Deluxe Ocean Suite">
+                        <span class="room-price">$299<span>/Night</span></span>
+                    </div>
+                    <div class="card-body">
+                        <div class="room-meta">
+                            <span><i class="fas fa-expand"></i> 45 m²</span>
+                            <span><i class="fas fa-user-friends"></i> 2 Guests</span>
+                        </div>
+                        <h3>Deluxe Ocean Suite</h3>
+                        <p>Bespoke interior design with floor-to-ceiling panoramic glass panels overlooking private shores.</p>
+                        <div class="card-footer-layout">
+                            <div class="rating">
+                                <i class="fas fa-star"></i> 4.9 <span>(120 reviews)</span>
+                            </div>
+                            <a href="booking.html" class="btn-link">Reserve Suite <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Room Card 2 -->
+                <div class="card room-card scroll-reveal">
+                    <div class="card-img-wrapper">
+                        <img src="https://images.unsplash.com/photo-1590490360182-c33d57733427?auto=format&fit=crop&w=800&q=80" alt="Executive Business Suite">
+                        <span class="room-price">$450<span>/Night</span></span>
+                    </div>
+                    <div class="card-body">
+                        <div class="room-meta">
+                            <span><i class="fas fa-expand"></i> 68 m²</span>
+                            <span><i class="fas fa-user-friends"></i> 3 Guests</span>
+                        </div>
+                        <h3>Executive Garden Suite</h3>
+                        <p>Equipped with state-of-the-art office automation integrations and a separate master lounge.</p>
+                        <div class="card-footer-layout">
+                            <div class="rating">
+                                <i class="fas fa-star"></i> 4.8 <span>(98 reviews)</span>
+                            </div>
+                            <a href="booking.html" class="btn-link">Reserve Suite <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Room Card 3 -->
+                <div class="card room-card scroll-reveal">
+                    <div class="card-img-wrapper">
+                        <img src="https://images.unsplash.com/photo-1566665797739-1674de7a421a?auto=format&fit=crop&w=800&q=80" alt="Presidential Penthouse">
+                        <span class="room-price">$1,200<span>/Night</span></span>
+                    </div>
+                    <div class="card-body">
+                        <div class="room-meta">
+                            <span><i class="fas fa-expand"></i> 140 m²</span>
+                            <span><i class="fas fa-user-friends"></i> 4 Guests</span>
+                        </div>
+                        <h3>Presidential Penthouse</h3>
+                        <p>The ultimate luxury tier. Access a personal dynamic butler, private infinity pool, and helipad entrance privileges.</p>
+                        <div class="card-footer-layout">
+                            <div class="rating">
+                                <i class="fas fa-star"></i> 5.0 <span>(44 reviews)</span>
+                            </div>
+                            <a href="booking.html" class="btn-link">Reserve Suite <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Choose Us & Statistics Counter -->
+    <section class="section section-why bg-dark text-white">
+        <div class="container">
+            <div class="grid grid-2 items-center">
+                <div class="scroll-reveal">
+                    <span class="sub-title gold-text">AURA EXPERIENCE</span>
+                    <h2>Unrivaled Standards. Passionate Hospitality.</h2>
+                    <p class="mt-4">We do not simply manage rooms; we curator structural moments. Each amenity and service checkpoint has been built to meet stringent ergonomic and luxury expectations.</p>
+                    
+                    <div class="why-features mt-4">
+                        <div class="why-feature-item">
+                            <div class="icon-box"><i class="fas fa-shield-alt"></i></div>
+                            <div>
+                                <h4>Elite Multi-Tier Security</h4>
+                                <p>Biometric access lines and discrete professional monitoring secure your complete privacy.</p>
+                            </div>
+                        </div>
+                        <div class="why-feature-item">
+                            <div class="icon-box"><i class="fas fa-concierge-bell"></i></div>
+                            <div>
+                                <h4>24/7 Dedicated Concierge</h4>
+                                <p>Immediate logistics adjustments, personal transport configurations, and errand automation.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="stats-grid scroll-reveal">
+                    <div class="stat-card">
+                        <h3 class="counter" data-target="15">0</h3>
+                        <p>Global Architecture Awards</p>
+                    </div>
+                    <div class="stat-card">
+                        <h3 class="counter" data-target="250">0</h3>
+                        <p>Premium Rooms & Suites</p>
+                    </div>
+                    <div class="stat-card">
+                        <h3 class="counter" data-target="100">0</h3>
+                        <p>Customer Satisfaction %</p>
+                    </div>
+                    <div class="stat-card">
+                        <h3 class="counter" data-target="30">0</h3>
+                        <p>Years of Legacy Service</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Slider -->
+    <section class="section section-testimonials bg-light">
+        <div class="container">
+            <div class="section-header text-center">
+                <span class="sub-title">Verified Reviews</span>
+                <h2>Voices of Our Patrons</h2>
+                <div class="divider"></div>
+            </div>
+
+            <div class="slider-container">
+                <div class="testimonial-slider" id="testimonial-slider">
+                    <!-- Slide 1 -->
+                    <div class="testimonial-slide active">
+                        <div class="quote-icon"><i class="fas fa-quote-right"></i></div>
+                        <p class="testimonial-text">"The Presidential Suite layout was sublime. Aura Stay's team managed our international board summit requests with absolute zero delays. Incredible asset governance."</p>
+                        <div class="user-info">
+                            <h4>Alexander Vance</h4>
+                            <span>Managing Director, FinTech Global</span>
+                        </div>
+                    </div>
+                    <!-- Slide 2 -->
+                    <div class="testimonial-slide">
+                        <div class="quote-icon"><i class="fas fa-quote-right"></i></div>
+                        <p class="testimonial-text">"An otherworldly wellness spa ecosystem. The holistic therapies, room service customization matrix, and thermal paths match high international luxury standards."</p>
+                        <div class="user-info">
+                            <h4>Elena Rostova</h4>
+                            <span>Wellness Consultant & Architect</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="slider-controls">
+                    <button class="slider-btn prev-btn" id="prev-testimonial" aria-label="Previous Testimonial"><i class="fas fa-chevron-left"></i></button>
+                    <button class="slider-btn next-btn" id="next-testimonial" aria-label="Next Testimonial"><i class="fas fa-chevron-right"></i></button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Accordion Section -->
+    <section class="section section-faq">
+        <div class="container container-narrow">
+            <div class="section-header text-center">
+                <span class="sub-title">Inquiries & Clarifications</span>
+                <h2>Frequently Asked Questions</h2>
+                <div class="divider"></div>
+            </div>
+
+            <div class="accordion-wrapper">
+                <div class="accordion-item">
+                    <button class="accordion-header">
+                        <span>What are standard check-in and check-out matrices?</span>
+                        <i class="fas fa-plus"></i>
+                    </button>
+                    <div class="accordion-body">
+                        <p>Standard check-in begins securely at 15:00. Check-out configurations terminate at 11:00. Early access or latency parameters can be adjusted via your concierge dispatch unit.</p>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <button class="accordion-header">
+                        <span>Is private valet services and airport transport included?</span>
+                        <i class="fas fa-plus"></i>
+                    </button>
+                    <div class="accordion-body">
+                        <p>Yes, all direct booking operations through our platform unlock access to complementary luxury EV airport transit and 24-hour subterranean valet allocations.</p>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <button class="accordion-header">
+                        <span>Can I cancel or alter reservation configurations?</span>
+                        <i class="fas fa-plus"></i>
+                    </button>
+                    <div class="accordion-body">
+                        <p>Flexible tier items qualify for absolute cancellations or modification scheduling up to 48 hours prior to targeted reservation milestones without penalties.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter -->
+    <section class="newsletter-section bg-dark text-white text-center">
+        <div class="container container-narrow scroll-reveal">
+            <h3>Subscribe to Aura Chronicles</h3>
+            <p>Unlock VIP private booking keys, architectural notes, and seasonal gastronomy events curated directly to your portal.</p>
+            <form class="newsletter-form mt-4" id="newsletter-form">
+                <input type="email" placeholder="Enter your professional email address" required aria-label="Newsletter email">
+                <button type="submit" class="btn btn-gold">Subscribe</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="main-footer bg-navy text-white">
+        <div class="container grid grid-4">
+            <div class="footer-col">
+                <a href="index.html" class="logo logo-white">AURA<span>STAY</span></a>
+                <p class="mt-3">Redefining high-end hotel management frameworks and bespoke guest placement services across key global modern sectors.</p>
+                <div class="social-links mt-4">
+                    <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                    <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+            </div>
+            <div class="footer-col">
+                <h4>Navigational Links</h4>
+                <ul class="footer-links">
+                    <li><a href="index.html">Home Overview</a></li>
+                    <li><a href="rooms.html">Suites Portfolio</a></li>
+                    <li><a href="services.html">Bespoke Services</a></li>
+                    <li><a href="about.html">Legacy & Story</a></li>
+                    <li><a href="contact.html">Connect Infrastructure</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Our Destinations</h4>
+                <ul class="footer-links">
+                    <li><a href="#">Manhattan Central Residence</a></li>
+                    <li><a href="#">Maldives Coastal Villas</a></li>
+                    <li><a href="#">St. Moritz Ski Chalets</a></li>
+                    <li><a href="#">Tokyo Heights Penthouse</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Corporate Contacts</h4>
+                <p><i class="fas fa-map-marker-alt text-gold mr-2"></i> 742 Elite Boulevard, Suite 100, New York, NY</p>
+                <p class="mt-2"><i class="fas fa-phone text-gold mr-2"></i> +1 (555) 839-2001</p>
+                <p class="mt-2"><i class="fas fa-envelope text-gold mr-2"></i> concierge@aurastay.com</p>
+            </div>
+        </div>
+        <div class="footer-bottom text-center">
+            <div class="container">
+                <p>&copy; 2026 Aura Stay Management Group Inc. All Rights Reserved. Built with performance structures.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button id="back-to-top" class="back-to-top" aria-label="Back to Top"><i class="fas fa-arrow-up"></i></button>
+
+    <!-- Main Script -->
+    <script src="js/script.js"></script>
+</body>
+</html>

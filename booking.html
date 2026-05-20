@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Secure reservation configuration terminal. Finalize room dates, occupant levels, and check-in specifications instantly.">
+    <title>Reservation Configuration Terminal | Aura Stay</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <div class="preloader" id="preloader"><div class="spinner"></div></div>
+
+    <!-- Header Navbar -->
+    <header class="main-header" id="header">
+        <div class="container nav-container">
+            <a href="index.html" class="logo">AURA<span>STAY</span></a>
+            <nav class="navbar" id="navbar">
+                <ul class="nav-menu">
+                    <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+                    <li class="nav-item"><a href="rooms.html" class="nav-link">Rooms</a></li>
+                    <li class="nav-item"><a href="services.html" class="nav-link">Services</a></li>
+                    <li class="nav-item"><a href="about.html" class="nav-link">About</a></li>
+                    <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="header-actions">
+                <a href="booking.html" class="btn btn-gold btn-nav active">Book A Room</a>
+                <button class="hamburger" id="hamburger" aria-label="Toggle Menu">
+                    <span class="bar"></span><span class="bar"></span><span class="bar"></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Booking System Module -->
+    <section class="section booking-interface-section bg-light" style="min-height: 85vh; display: flex; align-items: center;">
+        <div class="container container-narrow">
+            <div class="card p-5 shadow-lg scroll-reveal bg-white">
+                <div class="text-center mb-4">
+                    <span class="sub-title">SECURE GATEWAY</span>
+                    <h2>Reservation Configuration Terminal</h2>
+                    <div class="divider"></div>
+                </div>
+
+                <form id="main-booking-form" novalidate>
+                    <div class="grid grid-2">
+                        <div class="form-group mb-3">
+                            <label for="book_name">Primary Resident Name</label>
+                            <input type="text" id="book_name" class="form-control" required placeholder="Jane Doe">
+                            <span class="error-msg" id="book_name_err">Name input requires alphabetic strings.</span>
+                        </div>
+                        <div class="form-group mb-3">
+                            <label for="book_email">Communications Email</label>
+                            <input type="email" id="book_email" class="form-control" required placeholder="j.doe@domain.com">
+                            <span class="error-msg" id="book_email_err">Valid secure email is mandatory.</span>
+                        </div>
+                    </div>
+
+                    <div class="grid grid-2">
+                        <div class="form-group mb-3">
+                            <label for="book_checkin">Target Check-In Date</label>
+                            <input type="date" id="book_checkin" class="form-control" required>
+                            <span class="error-msg" id="book_checkin_err">Check-in date cannot reside in historical values.</span>
+                        </div>
+                        <div class="form-group mb-3">
+                            <label for="book_checkout">Target Check-Out Date</label>
+                            <input type="date" id="book_checkout" class="form-control" required>
+                            <span class="error-msg" id="book_checkout_err">Check-out target timeline must follow check-in steps.</span>
+                        </div>
+                    </div>
+
+                    <div class="grid grid-2">
+                        <div class="form-group mb-3">
+                            <label for="book_guests">Occupant Metric allocation</label>
+                            <select id="book_guests" class="form-control">
+                                <option value="1">1 Active Occupant</option>
+                                <option value="2" selected>2 Active Occupants</option>
+                                <option value="3">3 Active Occupants</option>
+                                <option value="4">4+ Maximum Threshold</option>
+                            </select>
+                        </div>
+                        <div class="form-group mb-3">
+                            <label for="book_tier">Sanctuary Configuration Class</label>
+                            <select id="book_tier" class="form-control">
+                                <option value="deluxe">Deluxe Ocean Suite ($299/N)</option>
+                                <option value="executive">Executive Garden Suite ($450/N)</option>
+                                <option value="presidential">Presidential Skyline Penthouse ($1,200/N)</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="form-group mb-4">
+                        <label for="book_notes">Dietary, Acoustical, or Logistics Special Requirements</label>
+                        <textarea id="book_notes" rows="3" class="form-control" placeholder="Specify internal preference matrices..."></textarea>
+                    </div>
+
+                    <button type="submit" class="btn btn-gold btn-block py-3">Commit Asset Allocation & Finalize Booking</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Success Feedback Global Interaction Modal Component -->
+    <div class="modal-overlay" id="success-modal">
+        <div class="modal-card text-center">
+            <div class="success-icon-animation mb-3"><i class="fas fa-check-circle"></i></div>
+            <h3>Reservation Logged Perfectly</h3>
+            <p class="my-3">Your transaction tokens have cleared. Check your network routing layers for digital confirmation vouchers within 90 seconds.</p>
+            <button class="btn btn-navy btn-sm" id="close-modal-btn">Acknowledge Connection</button>
+        </div>
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

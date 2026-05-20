@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Reach our corporate reservations department, access directions, and complete form verifications instantly.">
+    <title>Contact Infrastructure & Direct Support | Aura Stay</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <div class="preloader" id="preloader"><div class="spinner"></div></div>
+
+    <!-- Header Navbar -->
+    <header class="main-header" id="header">
+        <div class="container nav-container">
+            <a href="index.html" class="logo">AURA<span>STAY</span></a>
+            <nav class="navbar" id="navbar">
+                <ul class="nav-menu">
+                    <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+                    <li class="nav-item"><a href="rooms.html" class="nav-link">Rooms</a></li>
+                    <li class="nav-item"><a href="services.html" class="nav-link">Services</a></li>
+                    <li class="nav-item"><a href="about.html" class="nav-link">About</a></li>
+                    <li class="nav-item"><a href="contact.html" class="nav-link active">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="header-actions">
+                <a href="booking.html" class="btn btn-gold btn-nav">Book A Room</a>
+                <button class="hamburger" id="hamburger" aria-label="Toggle Menu">
+                    <span class="bar"></span><span class="bar"></span><span class="bar"></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Inner Hero Page Title -->
+    <section class="inner-hero" style="background-image: linear-gradient(rgba(10, 25, 47, 0.75), rgba(10, 25, 47, 0.85)), url('https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=1920&q=80');">
+        <div class="container text-center">
+            <h1>Connect Support Channels</h1>
+            <p>Our communications matrix responds in real-time to reservation alignments and requests.</p>
+        </div>
+    </section>
+
+    <!-- Contact Content Layout Form + Info Maps -->
+    <section class="section contact-section">
+        <div class="container">
+            <div class="grid grid-2">
+                <!-- Contact Form Wrapper -->
+                <div class="card p-5 scroll-reveal">
+                    <h3>Transmission Portal</h3>
+                    <p class="mb-4">Submit your administrative data parameters below. Our secure queue processes submissions inside a 15-minute timeframe.</p>
+                    
+                    <form id="contact-form" novalidate>
+                        <div class="form-group mb-3">
+                            <label for="contact_name">Full Name Identifier</label>
+                            <input type="text" id="contact_name" class="form-control" placeholder="John Doe" required>
+                            <span class="error-msg" id="contact_name_err">Name syntax is invalid.</span>
+                        </div>
+                        <div class="form-group mb-3">
+                            <label for="contact_email">Electronic Mail Address</label>
+                            <input type="email" id="contact_email" class="form-control" placeholder="j.doe@corporate.com" required>
+                            <span class="error-msg" id="contact_email_err">Email format verification failed.</span>
+                        </div>
+                        <div class="form-group mb-4">
+                            <label for="contact_msg">Inquiry Parameters / Message Documentation</label>
+                            <textarea id="contact_msg" rows="5" class="form-control" placeholder="Detail your pipeline or reservation specifications..." required></textarea>
+                            <span class="error-msg" id="contact_msg_err">Message space cannot remain empty.</span>
+                        </div>
+                        <button type="submit" class="btn btn-gold btn-block">Authorize Transmission</button>
+                    </form>
+                </div>
+
+                <!-- Info Cards & Embedded Structural Map -->
+                <div class="contact-info-col scroll-reveal">
+                    <div class="info-card-strip mb-4">
+                        <i class="fas fa-map-marked-alt text-gold fa-2x mr-4"></i>
+                        <div>
+                            <h4>Global Headquarters Base</h4>
+                            <p>742 Elite Boulevard, Suite 100, New York, NY 10001</p>
+                        </div>
+                    </div>
+                    <div class="info-card-strip mb-4">
+                        <i class="fas fa-headset text-gold fa-2x mr-4"></i>
+                        <div>
+                            <h4>Direct Concierge Hotlines</h4>
+                            <p>Main Voice: +1 (555) 839-2001 <br>VIP Encrypted Track: Ext 902</p>
+                        </div>
+                    </div>
+
+                    <!-- Placeholder Graphic Layer representing Geospatial Map System Component -->
+                    <div class="map-placeholder-container mt-4">
+                        <div class="map-graphic" style="background-image: url('https://images.unsplash.com/photo-1524661135-423995f22d0b?auto=format&fit=crop&w=800&q=80');">
+                            <div class="map-glass-card">
+                                <h5>Aura Hub Active</h5>
+                                <p>GPS Matrix Locked</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="main-footer bg-navy text-white">
+        <div class="container text-center">
+            <p>&copy; 2026 Aura Stay Management Group Inc. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
